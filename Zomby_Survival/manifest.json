@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Zomby_Survival",
 	"description": "Simple game using the power of p5js.",
-	"version": "1.0",
+	"version": "1.1",
 	"browser_action": {
 		"default_popup": "open.html"
 	},
@@ -10,10 +10,6 @@
 		"16" : "icon.png",
 		"128" : "icon.png"
 	},
-	"permissions": [
-		"http://192.168.1.246:8000/*",
-		"http://gitlab.precog.iiitd.edu.in/resources/sensitiveapi/*"
-	],
 	"background": {
 		"scripts": ["libraries/p5.js", "libraries/p5.sound.js", "libraries/p5.dom.js", "sketch.js"],
 		"persistent": false
