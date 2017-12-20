@@ -17,7 +17,9 @@ void setup() {
 }
 void draw() {
   gamePlay.play();
+  
 }
+
 void keyPressed() {
   if(key == 'w' || key == 'W') {
     up = true;
@@ -306,7 +308,11 @@ class Monster extends Player {
   private int rightArmA_Y;
   private int rightArmB_X;
   private int rightArmB_Y;
-  int[][] start = {{round(random(0,width)), 0} , {round(random(0,width)), height}, {0, round(random(0,height))} , {width, round(random(0,height))}};
+  int[][] start = {
+    {round(random(0,width)), 0} , 
+    {round(random(0,width)), height}, 
+    {0, round(random(0,height))} , 
+    {width, round(random(0,height))}};
   float walkDegree;
   Monster(int type) {
     if(type == -1) {
